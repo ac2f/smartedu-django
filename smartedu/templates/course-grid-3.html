@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,22 +16,22 @@
     <meta name="author" content="">
 
     <!-- Site Icons -->
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <!-- Site CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <!-- ALL VERSION CSS -->
-    <link rel="stylesheet" href="css/versions.css">
+    <link rel="stylesheet" href="{% static 'css/versions.css' %}">
     <!-- Responsive CSS -->
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
 
     <!-- Modernizer for Portfolio -->
-    <script src="js/modernizer.js"></script>
+    <script src="{% static 'js/modernizer.js' %}"></script>
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -132,7 +133,7 @@
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png" alt="" />
+					<img src="{% static 'images/logo.png' %}" alt="" />
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="icon-bar"></span>
@@ -191,7 +192,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_1.jpg" alt="" class="img-fluid">
+							<img src="{% static 'images/blog_1.jpg' %}" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -222,7 +223,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_2.jpg" alt="" class="img-fluid">
+							<img src="{% static 'images/blog_2.jpg' %}" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -253,7 +254,7 @@
 				<div class="col-lg-4 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_3.jpg" alt="" class="img-fluid">
+							<img src="{% static 'images/blog_3.jpg' %}" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -288,7 +289,7 @@
 				<div class="col-lg-4 col-md-6 col-12">
                    <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_4.jpg" alt="" class="img-fluid">
+							<img src="{% static 'images/blog_4.jpg' %}" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -319,7 +320,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_5.jpg" alt="" class="img-fluid">
+							<img src="{% static 'images/blog_5.jpg' %}" alt="" class="img-fluid">
 						</div>		
 						<div class="course-br">
 							<div class="course-title">
@@ -350,7 +351,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="course-item">
 						<div class="image-blog">
-							<img src="images/blog_6.jpg" alt="" class="img-fluid">
+							<img src="{% static 'images/blog_6.jpg' %}" alt="" class="img-fluid">
 						</div>
 						<div class="course-br">
 							<div class="course-title">
@@ -385,22 +386,22 @@
         <div class="container">
             <div class="row logos">
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="{% static 'images/logo_01.png' %}" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="{% static 'images/logo_02.png' %}" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="{% static 'images/logo_03.png' %}" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="{% static 'images/logo_04.png' %}" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="{% static 'images/logo_05.png' %}" alt="" class="img-repsonsive"></a>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
+                    <a href="#"><img src="{% static 'images/logo_06.png' %}" alt="" class="img-repsonsive"></a>
                 </div>
             </div><!-- end row -->
         </div><!-- end container -->
@@ -474,9 +475,9 @@
     <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
 
     <!-- ALL JS FILES -->
-    <script src="js/all.js"></script>
+    <script src="{% static 'js/all.js' %}"></script>
     <!-- ALL PLUGINS -->
-    <script src="js/custom.js"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
 
 </body>
 </html>
