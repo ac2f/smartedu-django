@@ -1,5 +1,6 @@
 from django.http import HttpResponse, HttpResponseRedirect
-from django.views import render
+from django.shortcuts import loader, render
 
-def x():
-    pass
+def index(request):
+    return render(request, 'index.html');
+    return HttpResponse(loader.get_template("index.html").render());
