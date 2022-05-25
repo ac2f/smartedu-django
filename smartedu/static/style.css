@@ -3308,7 +3308,11 @@ span.m_1 {
     position: relative;
 }
 .our-team .team-img img{
-    width: 100%;
+    /* width: 100%; */
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 2500px;
     height: auto;
 }
 .our-team .social{
@@ -3397,7 +3401,11 @@ span.m_1 {
 }
 .image-blog img{
 	padding: 0 !important;
-	width: 100%;
+	/* width: 100%; */
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 250px;
+    max-height: 2500px;
 	margin: 0 !important;
 	opacity: 1;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";

@@ -10,165 +10,27 @@
 	<div id="teachers" class="section wb">
         <div class="container">
             <div class="row">
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="our-team">
-						<div class="team-img">
-							<img src="{% static 'images/team-01.png' %}">
-							<div class="social">
-								<ul>
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-									<li><a href="#" class="fa fa-skype"></a></li>
-								</ul>
+				{% for teacher in teachers %}
+					<div class="col-lg-3 col-md-6 col-12">
+						<div class="our-team">
+							<div class="team-img">
+								<img src="{% get_media_prefix %}{{ teacher.image }}">
+								<div class="social">
+									<ul>
+										<li><a href="https://www.facebook.com/{{ teacher.facebook }}" class="fa fa-facebook"></a></li>
+										<li><a href="https://twitter.com/{{ teacher.twitter }}" class="fa fa-twitter"></a></li>
+										<li><a href="https://www.linkedin.com/in/{{ teacher.linkedIn}}" class="fa fa-linkedin"></a></li>
+										<li><a href="https://skype.com/{{ teacher.skype }}" class="fa fa-skype"></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="team-content">
+								<h3 class="title">{{ teacher.firstName }} {{ teacher.lastName }}</h3>
+								<span class="post">{{ teacher.jobTitle }}</span>
 							</div>
 						</div>
-						<div class="team-content">
-							<h3 class="title">Williamson</h3>
-							<span class="post">Web Developer</span>
-						</div>
 					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="our-team">
-						<div class="team-img">
-							<img src="{% static 'images/team-02.png' %}">
-							<div class="social">
-								<ul>
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-									<li><a href="#" class="fa fa-skype"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3 class="title">Kristiana</h3>
-							<span class="post">Web Designer</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="our-team">
-						<div class="team-img">
-							<img src="{% static 'images/team-03.png' %}">
-							<div class="social">
-								<ul>
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-									<li><a href="#" class="fa fa-skype"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3 class="title">Steve Thomas</h3>
-							<span class="post">Web Developer</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="our-team">
-						<div class="team-img">
-							<img src="{% static 'images/team-04.png' %}">
-							<div class="social">
-								<ul>
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-									<li><a href="#" class="fa fa-skype"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3 class="title">Miranda joy</h3>
-							<span class="post">Web Developer</span>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="our-team">
-						<div class="team-img">
-							<img src="{% static 'images/team-01.png' %}">
-							<div class="social">
-								<ul>
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-									<li><a href="#" class="fa fa-skype"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3 class="title">Williamson</h3>
-							<span class="post">Web Developer</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="our-team">
-						<div class="team-img">
-							<img src="{% static 'images/team-02.png' %}">
-							<div class="social">
-								<ul>
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-									<li><a href="#" class="fa fa-skype"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3 class="title">Kristiana</h3>
-							<span class="post">Web Designer</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="our-team">
-						<div class="team-img">
-							<img src="{% static 'images/team-03.png' %}">
-							<div class="social">
-								<ul>
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-									<li><a href="#" class="fa fa-skype"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3 class="title">Steve Thomas</h3>
-							<span class="post">Web Developer</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-3 col-md-6 col-12">
-					<div class="our-team">
-						<div class="team-img">
-							<img src="{% static 'images/team-04.png' %}">
-							<div class="social">
-								<ul>
-									<li><a href="#" class="fa fa-facebook"></a></li>
-									<li><a href="#" class="fa fa-twitter"></a></li>
-									<li><a href="#" class="fa fa-linkedin"></a></li>
-									<li><a href="#" class="fa fa-skype"></a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="team-content">
-							<h3 class="title">Miranda joy</h3>
-							<span class="post">Web Developer</span>
-						</div>
-					</div>
-				</div>
+				{% endfor %}
             </div><!-- end row -->
         </div><!-- end container -->
     </div><!-- end section -->	
