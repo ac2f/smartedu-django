@@ -30,7 +30,7 @@
 									<h2><a href="#" title="">{{ course.title }}</a></h2>
 								</div>
 								<div class="course-desc">
-									<p>{{ course.description }}</p>
+									<p>{{ course.description | truncatechars:120 }}</p>
 								</div>
 								<div class="course-rating">
 									4.5
