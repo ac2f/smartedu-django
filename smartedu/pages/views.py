@@ -12,7 +12,5 @@ def blog_single(request):
     return render(request, 'blog-single.html');
 def teachers(request):
     return render(request, 'teachers.html');
-def pricing(request):
-    return render(request, 'pricing.html');
 def contact(request):
     return render(request, 'contact.html');
